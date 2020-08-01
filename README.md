@@ -1,27 +1,32 @@
-# Solemne2
+# Enunciado de la prueba.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.24.
+Se debe realizar la confección del frontend usaremos Angular y la API que nos provee jsonplaceholder. Está API posee 6 entidades siendo la de Usuarios la central, que envuelven parte del CRUD de al menos una entidad, y se debe trabajar en los siguientes casos:
+  • Usuarios
+  • Post
+  • Comments
+Se pide al menos listar, crear y eliminar comentarios de un post, y clasificar cada post con su respectivo comment.
+Como instrucción general la aplicación debe tener estilos los cuales se puede incluir Bootstrap, NgZorro , Angular material, siendo estos opcionales pero debe incluir SCSS obligatoriamente con notación BEM. Debe haber uso correcto de BEM y la capacidad para separar el template en componentes más pequeños.
+En el siguiente link puede documentarse acerca del uso de la API https://jsonplaceholder.typicode.com/.
 
-## Development server
+Además implemente un flujo de CI/CD integrado desde el control de versiones hasta el despliegue. Para este fin, debe Dockerizar la aplicación y desplegarla en un servidor cloud como GCP, usando para este fin Docker-swarm o Kubernetes y debe ser posible acceder a ella desde una URL. En este contexto se debe:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1. Automatizar el flujo de construcción de la imagen Docker, frente a commits o lanzar un MR.
+2. Se debe desplegar la aplicación conectándose al servidor remoto y desplegando la imagen que ha sido previamente guardada en un registro de contenedores como el de gitlab.
 
-## Code scaffolding
+# Instrucciones para levantar la aplicación.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+##  Clonar el repositorio
 
-## Build
+- `git clone https://github.com/sebastianrhsarh/apiPlaceholder.git`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- `git pull`
 
-## Running unit tests
+## En el repositorio
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Instalar node_modules con `npm install`
 
-## Running end-to-end tests
+- Levantar el proyecto con `npm start` o `ng serve`
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Ver el proyecto
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- http://localhost:4200/
